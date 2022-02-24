@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# NewCombin Challenge by Bruno Díaz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hola! Aquí les entrego el proyecto que alberga el resultado del desafío.
 
-## Available Scripts
+Solo deben instalar las dependencias y ejecutar el proyecto para iniciar.
 
-In the project directory, you can run:
+<details>
+<summary>npm</summary>
 
-### `npm start`
+```sh
+$ npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+$ npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</details>
 
-### `npm test`
+<details>
+<summary>yarn</summary>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+$ yarn install
 
-### `npm run build`
+$ yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Y no olviden ejecutar también el proyecto de los servicios que me proporcionaron!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#
 
-### `npm run eject`
+Asumí que debía cargar la tabla (a través del servicio GET) al menos una vez al entrar a la página web (y por consecuencia cada vez que se entre a la página), así que los 2 minutos de espera que se requieren empiezan después de ingresar a dicha página.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Le agregué una pequeña landing page al root url del proyecto, para ingresar a la página del Form, por favor hacer click en "Start here!"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Aprovecho esta acción para cargar el token desde los servicios.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Agregué esto para que cuando el token expire mediante un refresco de página, se regrese automáticamente al root url para poder volver a cargar el token con dicha acción.
+(Esto pasa debido a mi elección por usar custom hooks en lugar de algo que pueda persistir el token dentro de la página, pero también es conveniente puesto que cada cierto tiempo el token expira).
 
-## Learn More
+Eso sería todo, estaré atento a sus comentarios.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Buenos días ^^

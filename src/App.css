@@ -26,6 +26,19 @@
 
 .App-link {
   color: #61dafb;
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+.App-link-button {
+  font-size: 26px;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  color: #61dafb;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +48,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 30px;
+}
+
+th {
+  border: 1px solid #ddd;
+}
+
+tr:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.form {
+  flex-direction: column;
+  display: flex;
+  width: 310px;
+}
+
+.form-label {
+  text-align: left;
+  font-size: 16px;
+}
+
+.form-error {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 0px;
+  color: red;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
