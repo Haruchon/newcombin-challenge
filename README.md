@@ -39,7 +39,7 @@ Le agregué una pequeña landing page al root url del proyecto, para ingresar a 
 Aprovecho esta acción para cargar el token desde los servicios.
 
 Agregué esto para que cuando el token expire mediante un refresco de página, se regrese automáticamente al root url para poder volver a cargar el token con dicha acción.
-(Esto pasa debido a mi elección por usar custom hooks en lugar de algo que pueda persistir el token dentro de la página, pero también es conveniente puesto que cada cierto tiempo el token expira).
+(Esto pasa debido a mi elección por usar custom hooks/provider en lugar de algo que pueda persistir el token dentro de la página, pero también es conveniente puesto que cada cierto tiempo el token expira).
 
 Eso sería todo, estaré atento a sus comentarios.
 
